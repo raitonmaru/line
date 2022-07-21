@@ -2,7 +2,12 @@ package main
 
 import (
 	"fmt"
+	"github.com/joho/godotenv"
+	"github.com/line/line-bot-sdk-go/linebot"
+	"log"
 	"net/http"
+	"os"
+  "strings"
 )
 
 func main() {
@@ -15,18 +20,6 @@ func main() {
 
 	http.ListenAndServe(addr, nil)
 }
-
-package handler
-
-import (
-	"fmt"
-	"github.com/joho/godotenv"
-	"github.com/line/line-bot-sdk-go/linebot"
-	"log"
-	"net/http"
-	"os"
-  "strings"
-)
 
 func HelloHandler(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "こんにちは")
