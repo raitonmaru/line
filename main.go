@@ -26,7 +26,7 @@ func HelloHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func LINEHandler(w http.ResponseWriter, r *http.Request) {
-	err := godotenv.Load("./.env")
+	err := godotenv.Load(".env")
 	if err != nil {
 		fmt.Println("Error loading .env file")
 	}
