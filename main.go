@@ -15,10 +15,7 @@ func main() {
 	http.HandleFunc("/", HelloHandler)
 	http.HandleFunc("/callback", LINEHandler)
 
-	port := "5000"
-	addr := ":" + port
-
-	http.ListenAndServe(addr, nil)
+	http.ListenAndServe(":"+os.Getenv("PORT"), nil)
 }
 
 func HelloHandler(w http.ResponseWriter, r *http.Request) {
