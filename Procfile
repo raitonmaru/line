@@ -1,1 +1,1 @@
-web: bin/LINE-test
+web: bin/line
