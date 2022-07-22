@@ -1,0 +1,6 @@
+github.com/joho/godotenv v1.4.0 h1:3l4+N6zfMWnkbPEXKng2o2/MR5mSwTrBih4ZEkkz1lg=
+github.com/joho/godotenv v1.4.0/go.mod h1:f4LDr5Voq0i2e/R5DDNOoa2zzDfwtkZa6DnEwAbqwq4=
+github.com/line/line-bot-sdk-go v7.8.0+incompatible h1:Uf9/OxV0zCVfqyvwZPH8CrdiHXXmMRa/L91G3btQblQ=
+github.com/line/line-bot-sdk-go v7.8.0+incompatible/go.mod h1:0RjLjJEAU/3GIcHkC3av6O4jInAbt25nnZVmOFUgDBg=
+github.com/raitochinyu/LINE-test v0.0.0-20220722161826-a0f4a72ddbbe h1:Erj3hcWt2Vr+791nA6htlIaT6qxhisIMRrnzqhujrMQ=
+github.com/raitochinyu/LINE-test v0.0.0-20220722161826-a0f4a72ddbbe/go.mod h1:JxPQ4qFaVgKW76PFRL/usyyCe4DfhbeoNn6Lhoz/Xjg=
