@@ -1,0 +1,9 @@
+version: "3"
+services:
+  line:
+    container_name: G-Rbot
+    build: .
+    tty: true
+    volumes:
+      - .:/line
+    command: ./main
