@@ -1,7 +1,7 @@
 package main
 
 import (
-	"./handler"
+	"github.com/raitochinyu/LINE-test/handler"
 	"fmt"
 	"net/http"
 )
