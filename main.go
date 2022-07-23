@@ -1,6 +1,7 @@
 package main
 
 import (
+	"os"
 	"github.com/raitochinyu/LINE-test/handler"
 	"fmt"
 	"net/http"
@@ -11,7 +12,7 @@ func main() {
 	http.HandleFunc("/", handler.HelloHandler)
 	http.HandleFunc("/callback", handler.LINEHandler)
 
-	port := "5000"
+	port := os.Getenv("PORT")
 	addr := ":" + port
 
 	http.ListenAndServe(addr, nil)
