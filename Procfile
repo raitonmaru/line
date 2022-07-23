@@ -1,1 +1,1 @@
-["go build main.go", "./main.go"]
+web: go run main.go
