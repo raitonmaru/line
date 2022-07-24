@@ -10,6 +10,23 @@ import (
 	"strings"
 )
 
+// strings.Contains(search, target)（searchの中にtargetが含まれてるか）
+// strings.EqualFold(s1, s2)（s1はs2と等しいか）
+// strings.Index(search, target)（searchの中にtargetが含まれている場合のindex）
+// strings.LastIndex(search, target)（searchの中にtargetが含まれている場合の最後のindex）
+// strings.Replace(search, old, new, n)（searchの中のoldをnewに置換する）
+// strings.ReplaceAll(search, old, new)（searchの中のoldをnewに置換する）
+// strings.Split(s, sep)（sをsepで分割する）
+// strings.ToLower(s)（sを小文字にする）
+// strings.ToUpper(s)（sを大文字にする）
+// strings.Trim(s, cutset)（sの前後にcutsetがある場合は削除する）
+// strings.TrimLeft(s, cutset)（sの前にcutsetがある場合は削除する）
+// strings.TrimRight(s, cutset)（sの後にcutsetがある場合は削除する）
+// strings.TrimSpace(s)（sの前後に空白がある場合は削除する）
+// strings.Join(values, sep)（valuesをsepで連結する）
+// strings.Repeat(s, n)（sをn回繰り返す）
+// strings.ToTitle(s)（sをタイトルケースにする）
+
 func resultHandler(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "成功してます。")
 }
@@ -50,22 +67,6 @@ func LINEHandler(w http.ResponseWriter, r *http.Request) {
 			switch message := event.Message.(type) {
 			// メッセージがテキスト形式の場合
 			case *linebot.TextMessage:
-				// strings.Contains(search, target)（searchの中にtargetが含まれてるか）
-				// strings.EqualFold(s1, s2)（s1はs2と等しいか）
-				// strings.Index(search, target)（searchの中にtargetが含まれている場合のindex）
-				// strings.LastIndex(search, target)（searchの中にtargetが含まれている場合の最後のindex）
-				// strings.Replace(search, old, new, n)（searchの中のoldをnewに置換する）
-				// strings.ReplaceAll(search, old, new)（searchの中のoldをnewに置換する）
-				// strings.Split(s, sep)（sをsepで分割する）
-				// strings.ToLower(s)（sを小文字にする）
-				// strings.ToUpper(s)（sを大文字にする）
-				// strings.Trim(s, cutset)（sの前後にcutsetがある場合は削除する）
-				// strings.TrimLeft(s, cutset)（sの前にcutsetがある場合は削除する）
-				// strings.TrimRight(s, cutset)（sの後にcutsetがある場合は削除する）
-				// strings.TrimSpace(s)（sの前後に空白がある場合は削除する）
-				// strings.Join(values, sep)（valuesをsepで連結する）
-				// strings.Repeat(s, n)（sをn回繰り返す）
-				// strings.ToTitle(s)（sをタイトルケースにする）
 				fmt.Println("メッセージ：", message)
 				if strings.EqualFold(message.Text, "おはよう") {
 					// メッセージを送信
